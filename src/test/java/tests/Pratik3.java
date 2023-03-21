@@ -61,5 +61,21 @@ public class Pratik3 {
 
     }
 }
+//public class Q7 {
+//    MealsCenterPage mealsCenterPage = new MealsCenterPage();
+//
+//    @Test
+//    public void test01(){
+//        Driver.getDriver().get("https://qa.mealscenter.com/");
+//
+//        List<WebElement> yerelMutfakList = Driver.getDriver().findElements(By.xpath("//*[@class='col cuisineMainPage']"));
+//        List<String> elementYazi = new ArrayList<>();
+//        for (WebElement each:yerelMutfakList) {
+//           elementYazi.add(each.getText());
+//
+//        }
+//        System.out.println(elementYazi);
+//    }
+//}
 
 
