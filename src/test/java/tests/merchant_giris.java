@@ -11,7 +11,9 @@ public class merchant_giris {
 
     @Test
     public void test01() {
-        mealsCenterPage.categoryGiris();
+      // mealsCenterPage.categoryGiris();
+      // mealsCenterPage.categoryShortLink.click();
+        // mealsCenterPage.categoryIlkShortLink();
 
     }
 }

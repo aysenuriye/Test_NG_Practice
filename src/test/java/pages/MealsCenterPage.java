@@ -23,6 +23,11 @@ public class MealsCenterPage {
     public WebElement passwordButton;
     @FindBy(xpath = "//input[@type='submit']")
     public WebElement loginSignInButton;
+    @FindBy(xpath = "//div[@class='p-2']")
+   public WebElement categoryAddLink;
+    @FindBy(xpath = "//i[@class='zmdi zmdi-sort-asc']")
+    public WebElement categoryShortLink;
+
 
  public void loginMethod() {
     //kullanıcı Merchant giris = https://qa.mealscenter.com/backoffice/auth/login sayfaya gider
@@ -48,6 +53,19 @@ public class MealsCenterPage {
         mealsCenterPage.categortLink.click();
 
     }
+    public void categoryIlkaddLink() {
+        MealsCenterPage mealsCenterPage = new MealsCenterPage();
+        mealsCenterPage.categoryGiris();
+        mealsCenterPage.categoryAddLink.click();
+
+    }
+    public void categoryIlkShortLink() {
+        MealsCenterPage mealsCenterPage = new MealsCenterPage();
+        mealsCenterPage.categoryGiris();
+        mealsCenterPage.categoryShortLink.click();
+
+    }
+
 
 
 }
