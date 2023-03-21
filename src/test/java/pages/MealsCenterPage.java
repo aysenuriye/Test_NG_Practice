@@ -27,7 +27,18 @@ public class MealsCenterPage {
    public WebElement categoryAddLink;
     @FindBy(xpath = "//i[@class='zmdi zmdi-sort-asc']")
     public WebElement categoryShortLink;
-
+    @FindBy(xpath = "//a[@href='/backoffice/food/category_update/id/72']")
+    public  WebElement categoryUpdate;
+    @FindBy(xpath = "//a[@data-id='72']")
+    public WebElement categoryDelete;
+    @FindBy(xpath = "//input[@type='search']")
+    public WebElement categorySearchtext;
+    @FindBy(xpath = "//i[@class='zmdi zmdi-search']")
+    public  WebElement categorySearchButton;
+    @FindBy(xpath = "//a[text()='Next']")
+    public WebElement categoryNextButton;
+    @FindBy(xpath = "//a[text()='Previous']")
+    public  WebElement categoryPreviousButton;
 
  public void loginMethod() {
     //kullanıcı Merchant giris = https://qa.mealscenter.com/backoffice/auth/login sayfaya gider
@@ -65,6 +76,19 @@ public class MealsCenterPage {
         mealsCenterPage.categoryShortLink.click();
 
     }
+    public void categoryUpdateLink() {
+        MealsCenterPage mealsCenterPage = new MealsCenterPage();
+        mealsCenterPage.categoryGiris();
+        mealsCenterPage.categoryUpdate.click();
+
+    }
+    public void categoryDeleteLink() {
+        MealsCenterPage mealsCenterPage = new MealsCenterPage();
+        mealsCenterPage.categoryGiris();
+        mealsCenterPage.categoryDelete.click();
+
+    }
+
 
 
 
